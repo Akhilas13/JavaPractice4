@@ -9,6 +9,8 @@ import java.util.Scanner;
 
 public class CountOccurences {
     public static void main(String[] args) {
+
+
         System.out.println("enter the string");
         Scanner input = new Scanner(System.in);
         String sentence = input.nextLine();
@@ -16,14 +18,21 @@ public class CountOccurences {
         array = sentence.toCharArray();
         System.out.println("enter the character to count");
         char character = input.next().charAt(0);//read the character to count
+
+
         HashMap<Character, Integer> occurences = new HashMap<Character, Integer>();
+
         for (char c : array) {
             if (occurences.containsKey(c)) {//checking for a character in hashmap
                 occurences.put(c, occurences.get(c) + 1);//if found increment the value for that character in hashmap
-            } else {
+            }
+
+            else {
                 occurences.put(c, 1);//if not found  put character in hashmap and assign its value as 1
             }
         }
+
+
         System.out.println("the number of" + character);
         System.out.println(occurences.get(character));//print the count of occurences of given character
 

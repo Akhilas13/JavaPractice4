@@ -21,8 +21,8 @@ public class CountWordOccurance {
         int count = 0;
         String input = "She sells seashells by the seashore";
         String findSentence = "se";
-        Pattern pattern = Pattern.compile(findSentence, Pattern.CASE_INSENSITIVE);
-        Matcher matcher = pattern.matcher(input);//finding the occurence of a word in a string
+        Pattern p= Pattern.compile(findSentence, Pattern.CASE_INSENSITIVE);
+        Matcher matcher = p.matcher(input);//finding the occurence of a word in a string
 
         while (matcher.find()) {
             count++;
