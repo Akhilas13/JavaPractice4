@@ -12,16 +12,16 @@ public class CountWordOccurance {
 
     public static void main(String[] args) {
         CountWordOccurance count = new CountWordOccurance();
-        count.getCount();
+        count.findWord();
     }
 
-    public void getCount() {
+    public void findWord() {
         scan = new Scanner(System.in);
         System.out.println();
         int count = 0;
         String input = "She sells seashells by the seashore";
-        String findString = "se";
-        Pattern pattern = Pattern.compile(findString, Pattern.CASE_INSENSITIVE);
+        String findSentence = "se";
+        Pattern pattern = Pattern.compile(findSentence, Pattern.CASE_INSENSITIVE);
         Matcher matcher = pattern.matcher(input);//finding the occurence of a word in a string
 
         while (matcher.find()) {
