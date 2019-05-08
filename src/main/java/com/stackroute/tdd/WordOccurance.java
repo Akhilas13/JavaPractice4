@@ -7,11 +7,11 @@ import java.util.Scanner;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
-public class CountWordOccurance {
+public class WordOccurance {
     Scanner scan;
 
     public static void main(String[] args) {
-        CountWordOccurance count = new CountWordOccurance();
+        WordOccurance count = new WordOccurance();
         count.findWord();
     }
 
