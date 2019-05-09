@@ -7,7 +7,7 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Scanner;
 
-public class WordSorting {
+public class ExtractWordsFromTextAndSort {
     public static void main(String[] args) {
         System.out.println("enter the paragraph");
         Scanner input = new Scanner(System.in);

@@ -5,13 +5,13 @@ package com.stackroute.tdd;
 
 import java.util.Scanner;
 
-public class PresenceOfName {
+public class PresenceOfNameHarryInString {
     public static void main(String[] args) {
         System.out.println("enter the string");
         Scanner input = new Scanner(System.in);
         String sentence = input.nextLine();//read the string
-        PresenceOfName p = new PresenceOfName();
-        p.nameHarry(sentence);
+        PresenceOfNameHarryInString presenceOfNameHarry = new PresenceOfNameHarryInString();
+        presenceOfNameHarry.nameHarry(sentence);
     }
 
     private void nameHarry(String sentence) {

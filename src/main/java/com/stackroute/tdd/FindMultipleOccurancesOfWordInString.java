@@ -7,11 +7,11 @@ import java.util.Scanner;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
-public class WordOccurance {
+public class FindMultipleOccurancesOfWordInString {
     Scanner scan;
 
     public static void main(String[] args) {
-        WordOccurance count = new WordOccurance();
+        FindMultipleOccurancesOfWordInString count = new FindMultipleOccurancesOfWordInString();
         count.findWord();
     }
 
@@ -21,8 +21,8 @@ public class WordOccurance {
         int count = 0;
         String input = "She sells seashells by the seashore";
         String findSentence = "se";
-        Pattern p= Pattern.compile(findSentence, Pattern.CASE_INSENSITIVE);
-        Matcher matcher = p.matcher(input);//finding the occurence of a word in a string
+        Pattern pattern= Pattern.compile(findSentence, Pattern.CASE_INSENSITIVE);
+        Matcher matcher = pattern.matcher(input);//finding the occurence of a word in a string
 
         while (matcher.find()) {
             count++;

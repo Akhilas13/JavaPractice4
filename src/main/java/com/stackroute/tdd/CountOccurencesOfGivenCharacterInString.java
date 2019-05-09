@@ -7,7 +7,7 @@ package com.stackroute.tdd;
 import java.util.HashMap;
 import java.util.Scanner;
 
-public class CountOccurences {
+public class CountOccurencesOfGivenCharacterInString {
     public static void main(String[] args) {
 
 

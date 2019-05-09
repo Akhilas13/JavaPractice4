@@ -3,7 +3,7 @@ package com.stackroute.tdd;
 
 import java.util.Scanner;
 
-public class Transpose {
+public class ReverseEachWordInString {
     StringBuilder reverseString = new StringBuilder();
 
     public static void main(String[] args) {
@@ -12,7 +12,7 @@ public class Transpose {
         String sentence = input.nextLine();//read the string
         String[] array = new String[20];
         array = sentence.split(" ");//split the string with space and assign the words to string array
-        Transpose t = new Transpose();
+        ReverseEachWordInString t = new ReverseEachWordInString();
         t.reverse(array);
     }
 
